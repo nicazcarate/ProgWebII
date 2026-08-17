@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 7 - Supermercado</title>
+</head>
+<body>
+    <h2>Caixa do Supermercado</h2>
+    <form action="calculo.php" method="POST">
+        Valor Total da Compra (R$): <input type="number" step="0.01" name="valor_compra" required><br><br>
+
+        Pagamento com Cartão (5% de desconto):<br>
+        <input type="radio" name="pagamento_cartao" value="sim" required> Sim<br>
+        <input type="radio" name="pagamento_cartao" value="nao"> Não<br><br>
+
+        Entrega em Domicílio (Taxa de 2%):<br>
+        <input type="radio" name="entrega_domicilio" value="sim" required> Sim<br>
+        <input type="radio" name="entrega_domicilio" value="nao"> Não<br><br>
+
+        <button type="submit">Calcular Valor Final</button>
+    </form>
+</body>
+</html>

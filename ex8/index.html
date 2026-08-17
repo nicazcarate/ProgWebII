@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 8 - Supermercado (Checkbox)</title>
+</head>
+<body>
+    <h2>Caixa do Supermercado</h2>
+    <form action="calculo.php" method="POST">
+        Valor Total da Compra (R$): <input type="number" step="0.01" name="valor_compra" required><br><br>
+
+        Opções adicionais:<br>
+        <input type="checkbox" name="pagamento_cartao" value="sim"> Pagamento com Cartão (5% de desconto)<br>
+        <input type="checkbox" name="entrega_domicilio" value="sim"> Entrega em Domicílio (Taxa de 2%)<br><br>
+
+        <button type="submit">Calcular Valor Final</button>
+    </form>
+</body>
+</html>

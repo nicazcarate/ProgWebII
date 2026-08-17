@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 9 - Loja e Sorteio</title>
+</head>
+<body>
+    <h2>Caixa da Loja</h2>
+    <form action="calculo.php" method="POST">
+        Valor da Compra (R$): <input type="number" step="0.01" name="valor_compra" required><br><br>
+
+        Forma de Pagamento:<br>
+        <input type="radio" name="forma_pagamento" value="vista" required> À vista (5% de desconto)<br>
+        <input type="radio" name="forma_pagamento" value="prazo"> A prazo (2% de acréscimo)<br><br>
+
+        Promoção:<br>
+        <input type="checkbox" name="cartao_visa" value="sim"> Pagamento com cartão Visa (Concorrer ao automóvel)<br><br>
+
+        <button type="submit">Processar Pagamento</button>
+    </form>
+</body>
+</html>
